@@ -1,110 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akbarali Vakhitov - Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: #f4f4f9;
-            font-family: 'Poppins', sans-serif;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .links a {
-            color: #007bff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .skill-box {
-            background: #007bff;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 5px;
-            font-size: 14px;
-        }
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            display: block;
-            margin: auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Resume - Akbarali Vakhitov</title>
+  <!-- Example font link; you can change if you like -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .resume-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .header .subheading {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-size: 0.95rem;
+    }
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Two-column layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+    .col-left {
+      flex: 1 1 60%;
+      min-width: 300px;
+    }
+    .col-right {
+      flex: 1 1 35%;
+      min-width: 250px;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      display: inline-block;
+      padding-bottom: 3px;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    /* Lists */
+    ul {
+      list-style: disc inside;
+      margin-left: 15px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    a {
+      word-wrap: break-word;
+    }
+
+    /* Subtle emphasis or bullet headings */
+    .project-title,
+    .certificate-title,
+    .award-title {
+      font-weight: 500;
+      color: #34495e;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      .col-left, .col-right {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1 class="text-center">Akbarali Vakhitov</h1>
-        <p class="text-center">Machine Learning & Computer Vision Researcher</p>
-        <p class="text-center links">
-            <a href="mailto:vahidovakbarali@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://linkedin.com/in/vakhitovakbarali"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/ImAli0"><i class="fab fa-github"></i> GitHub</a>
-        </p>
-        
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I am a passionate researcher in Machine Learning and Computer Vision, specializing in medical image analysis and deep learning. Currently, I am a research intern at CVHAI Lab at Hanyang University, working on advanced techniques for medical image segmentation.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Integrated System Engineering</strong> - Inha University (03/2020 - 08/2024)</p>
-            <p>GPA: 3.65/4.0 (Honor Student)</p>
-        </div>
-        
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Multi-Class Classification of Chest Diseases:</strong> A deep learning-based classification system for detecting COVID-19, Bacterial Pneumonia, and Normal cases using ResNet50. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main">GitHub</a></li>
-                <li><strong>Object Detection Finetuning using Mask R-CNN:</strong> Trained on Penn-Fudan Database for pedestrian detection and instance segmentation. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Object_Detection_Finetuning_using_Mask_R-CNN">GitHub</a></li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Research Experience & Internship</h2>
-            <p><strong>Research Intern at CVHAI Lab, Hanyang University</strong> (10/2024 - Present)</p>
-            <p>Midpoint Interpolation to Learn Compact and Separated Representations for Medical 3D UNet Segmentation of CT scans.</p>
-            <p><strong>Achievements/Tasks:</strong> Integrating Manifold mixup at latent space for better class representation.</p>
-            <p>Lab Website: <a href="https://sites.google.com/view/cvhai/members?authuser=0">CVHAI Lab</a></p>
-        </div>
-        
-        <div class="section">
-            <h2>Skills</h2>
-            <span class="skill-box">Machine Learning</span>
-            <span class="skill-box">Deep Learning</span>
-            <span class="skill-box">TensorFlow</span>
-            <span class="skill-box">PyTorch</span>
-            <span class="skill-box">OpenCV</span>
-        </div>
-        
-        <div class="section">
-            <h2>Honors & Awards</h2>
-            <ul>
-                <li>Integrated Project Design Competition: Bronze Award (2023)</li>
-                <li>Vertically Integrated Project Performance: Silver Award (2022)</li>
-            </ul>
-        </div>
+  <div class="resume-container">
+    <!-- HEADER SECTION -->
+    <div class="header">
+      <h1>AKBARALI VAKHITOV</h1>
+      <div class="subheading">Integrated System Engineering Student (Honor) • Inha University</div>
+      <div class="contact-info">
+        <div>Email: <a href="mailto:vahidovakbarali@gmail.com">vahidovakbarali@gmail.com</a></div>
+        <div>Phone: +82&nbsp;10&nbsp;2599&nbsp;0523</div>
+        <div>Location: Incheon, South Korea</div>
+        <div>Skype: live:cid.197aa1afb7d46706</div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/vakhitovakbarali" target="_blank">linkedin.com/in/vakhitovakbarali</a></div>
+        <div>GitHub: <a href="https://github.com/ImAli0" target="_blank">github.com/ImAli0</a></div>
+      </div>
     </div>
+
+    <!-- ABOUT & MAIN CONTENT IN 2 COLUMNS -->
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="col-left">
+        <!-- ABOUT ME -->
+        <div class="section">
+          <h2>About Me</h2>
+          <p>
+            <!-- Replace this text with the exact content from your LinkedIn “About” if desired -->
+            (Use your real LinkedIn About text here)  
+            Highly motivated student pursuing a Bachelor’s degree in Integrated System Engineering at Inha University.  
+            Passionate about Machine Learning, Data Science, and Computer Vision, particularly in the medical imaging domain.  
+            Skilled in Python, deep learning frameworks, networking fundamentals, and eager to collaborate on innovative AI solutions.
+          </p>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+          <h2>Education</h2>
+          <h3>Inha University, Integrated System Engineering</h3>
+          <ul>
+            <li>03/2020 – 08/2024 (Expected)</li>
+            <li>GPA: 3.65/4.0 (Honor Student)</li>
+          </ul>
+        </div>
+
+        <!-- PERSONAL PROJECTS -->
+        <div class="section">
+          <h2>Personal Projects</h2>
+
+          <h3 class="project-title">1. Multi-Class Classification of Chest Diseases</h3>
+          <ul>
+            <li>Targets COVID-19 Viral Pneumonia, Bacterial Pneumonia, and Normal.</li>
+            <li>Leveraged ResNet50 (pre-trained on ImageNet) for transfer learning.</li>
+            <li>Addressed limited dataset size using data augmentation and fine-tuning.</li>
+            <li>Repo: 
+              <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main" target="_blank">
+                Multi-Class Chest Diseases
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="project-title">2. Object Detection Finetuning using Mask R-CNN</h3>
+          <ul>
+            <li>Fine-tuned Mask R-CNN on the Penn-Fudan Database for pedestrian detection (170 images, 345 instances).</li>
+            <li>Utilized TorchVision features for instance segmentation on a custom dataset.</li>
+            <li>Repo: 
+              <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Object_Detection_Finetuning_using_Mask_R-CNN" target="_blank">
+                Mask R-CNN Finetuning
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="project-title">3. Spam Detection with LSTM</h3>
+          <ul>
+            <li>Implemented LSTM-based model to classify SMS messages as spam or ham.</li>
+            <li>Trained on SMS dataset to illustrate RNN-based text classification.</li>
+            <li>Repo: 
+              <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/LSTM%20based%20SPAM%20Detector" target="_blank">
+                LSTM Spam Detector
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="project-title">4. Neural Network from Scratch in TensorFlow</h3>
+          <ul>
+            <li>Built a simple neural network without high-level APIs like Keras.</li>
+            <li>Demonstrates manual forward propagation, parameter updates, training loop in raw TensorFlow.</li>
+            <li>Repo: 
+              <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/NN_from_scratch" target="_blank">
+                NN from Scratch
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RESEARCH EXPERIENCE & INTERNSHIP -->
+        <div class="section">
+          <h2>Research Experience & Internship</h2>
+          <h3>Research Intern at CVHAI Lab, Hanyang Univ.</h3>
+          <ul>
+            <li>10/2024 – Present, South Korea</li>
+            <li>
+              Project: Midpoint Interpolation to Learn Compact &amp; Separated Representations for Medical 3D UNet 
+              Segmentation of CT Scans
+            </li>
+            <li>Lab Link: 
+              <a href="https://sites.google.com/view/cvhai/members?authuser=0" target="_blank">
+                CVHAI Lab
+              </a>
+            </li>
+            <li>Achievements/Tasks:
+              <ul>
+                <li>Integrating manifold mixup at latent space for better class representation.</li>
+                <li>Exploring 3D UNet architectures for improved CT scan segmentation.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div><!-- END .col-left -->
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-right">
+        <!-- SKILLS -->
+        <div class="section">
+          <h2>Skills</h2>
+          <h3>Machine Learning &amp; Data Science</h3>
+          <ul>
+            <li>Data preprocessing, visualization, analysis, feature engineering</li>
+            <li>Regression, classification, clustering, dimensionality reduction</li>
+          </ul>
+          <h3>Deep Learning</h3>
+          <ul>
+            <li>NN, CNN, R-CNN, LSTM, Transformers, UNet</li>
+            <li>Transfer Learning, Attention, RNN, Regularization, Optimization</li>
+            <li>Computer Vision (CV), NLP</li>
+          </ul>
+          <h3>Libraries &amp; Frameworks</h3>
+          <ul>
+            <li>NumPy, Pandas, Matplotlib, Seaborn, scikit-learn</li>
+            <li>TensorFlow, PyTorch, OpenCV, MONAI</li>
+          </ul>
+          <h3>Programming</h3>
+          <ul>
+            <li>Python, C++</li>
+          </ul>
+          <h3>Tools &amp; Environments</h3>
+          <ul>
+            <li>Linux (Debian, Red Hat), Git, Docker</li>
+            <li>Wireshark, Packet Tracer, ROS</li>
+            <li>Cisco DevNet, CyberOps, CCNA</li>
+            <li>Embedded Systems (Raspberry Pi)</li>
+          </ul>
+        </div>
+
+        <!-- HONORS & AWARDS -->
+        <div class="section">
+          <h2>Honors &amp; Awards</h2>
+          <ul>
+            <li class="award-title">
+              Integrated Project Design Competition: Bronze Award 
+              <span>(03/2023 – 05/2023)</span>
+            </li>
+            <li class="award-title">
+              Vertically Integrated Project: Silver Award 
+              <span>(03/2022 – 06/2022)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CERTIFICATES -->
+        <div class="section">
+          <h2>Certificates</h2>
+          <ul>
+            <li class="certificate-title">
+              Sequence Models – 
+              <a href="https://coursera.org/verify/U78T2XSF7TW" target="_blank">
+                coursera.org/verify/U78T2XSF7TW
+              </a>
+            </li>
+            <li class="certificate-title">
+              Convolutional Neural Networks – 
+              <a href="https://coursera.org/account/accomplishments/verify/A4UXFKW89MPT" target="_blank">
+                coursera.org/verify/A4UXFKW89MPT
+              </a>
+            </li>
+            <li class="certificate-title">
+              Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization – 
+              <a href="https://coursera.org/verify/PDDL3JZB96EZ" target="_blank">
+                coursera.org/verify/PDDL3JZB96EZ
+              </a>
+            </li>
+            <li class="certificate-title">
+              Neural Networks and Deep Learning – 
+              <a href="https://coursera.org/verify/6GB7NA655985" target="_blank">
+                coursera.org/verify/6GB7NA655985
+              </a>
+            </li>
+            <li class="certificate-title">
+              Python for Machine Learning &amp; Data Science – 
+              <a href="https://www.udemy.com/certificate/UC-aa00005c-165b-4c9b-a3e9-48534933141a" target="_blank">
+                udemy.com/certificate/UC-aa00005c-165b-4c9b-a3e9-48534933141a
+              </a>
+            </li>
+            <li class="certificate-title">
+              Calculus for Machine Learning and Data Science – 
+              <a href="https://coursera.org/account/accomplishments/records/PZP9QXDXCWF4" target="_blank">
+                coursera.org/verify/PZP9QXDXCWF4
+              </a>
+            </li>
+            <li class="certificate-title">
+              IELTS Academic: 8.0 (C1) (02/2023 – 02/2025) – Certificate ID: 22RK009719VAK4001A
+            </li>
+          </ul>
+        </div>
+
+        <!-- LANGUAGES -->
+        <div class="section">
+          <h2>Languages</h2>
+          <ul>
+            <li>Uzbek – Native/Bilingual</li>
+            <li>Russian – Native/Bilingual</li>
+            <li>English – Full Professional Proficiency</li>
+            <li>Korean – Limited Working Proficiency</li>
+            <li>Arabic – Elementary Proficiency</li>
+          </ul>
+        </div>
+      </div><!-- END .col-right -->
+    </div><!-- END .row -->
+  </div><!-- END .resume-container -->
 </body>
 </html>
