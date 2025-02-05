@@ -7,44 +7,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1, h2 {
-            color: #343a40;
+            color: #f8f9fa;
         }
         .section {
             margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 10px;
         }
         .links a {
-            color: #007bff;
+            color: #ffd700;
             text-decoration: none;
+            font-weight: bold;
         }
         .links a:hover {
             text-decoration: underline;
         }
         .skill-box {
-            background: #dee2e6;
-            padding: 5px 10px;
-            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 12px;
+            border-radius: 10px;
             display: inline-block;
             margin: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Akbarali Vakhitov</h1>
-        <p class="text-center"><a href="mailto:vahidovakbarali@gmail.com">vahidovakbarali@gmail.com</a> | Incheon, South Korea</p>
-        <p class="text-center"><a href="https://linkedin.com/in/vakhitovakbarali">LinkedIn</a> | <a href="https://github.com/ImAli0">GitHub</a></p>
+        <h1>Akbarali Vakhitov</h1>
+        <p><a href="mailto:vahidovakbarali@gmail.com" class="links">vahidovakbarali@gmail.com</a></p>
+        <p><a href="https://linkedin.com/in/vakhitovakbarali" class="links">LinkedIn</a> | <a href="https://github.com/ImAli0" class="links">GitHub</a></p>
         
         <div class="section">
             <h2>Education</h2>
@@ -54,20 +61,13 @@
         
         <div class="section">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Multi-Class Classification of Chest Diseases:</strong> A deep learning-based classification system for detecting COVID-19, Bacterial Pneumonia, and Normal cases using ResNet50. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main">GitHub</a></li>
-                <li><strong>Object Detection Finetuning using Mask R-CNN:</strong> Trained on Penn-Fudan Database for pedestrian detection and instance segmentation. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Object_Detection_Finetuning_using_Mask_R-CNN">GitHub</a></li>
-                <li><strong>Spam Detection with LSTM:</strong> Implemented a spam detection system using Long Short-Term Memory (LSTM) networks. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/LSTM%20based%20SPAM%20Detector">GitHub</a></li>
-                <li><strong>Neural Network from Scratch in TensorFlow:</strong> Built a simple neural network from scratch without using Keras. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/NN_from_scratch">GitHub</a></li>
-            </ul>
+            <p><strong>Multi-Class Classification of Chest Diseases:</strong> A deep learning-based classification system for detecting COVID-19, Bacterial Pneumonia, and Normal cases using ResNet50. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main" class="links">GitHub</a></p>
         </div>
         
         <div class="section">
             <h2>Research Experience & Internship</h2>
             <p><strong>Research Intern at CVHAI Lab, Hanyang University</strong> (10/2024 - Present)</p>
-            <p>Midpoint Interpolation to Learn Compact and Separated Representations for Medical 3D UNet Segmentation of CT scans.</p>
-            <p><strong>Achievements/Tasks:</strong> Integrating Manifold mixup at latent space for better class representation.</p>
-            <p>Lab Website: <a href="https://sites.google.com/view/cvhai/members?authuser=0">CVHAI Lab</a></p>
+            <p>Lab Website: <a href="https://sites.google.com/view/cvhai/members?authuser=0" class="links">CVHAI Lab</a></p>
         </div>
         
         <div class="section">
@@ -77,43 +77,11 @@
             <div class="skill-box">TensorFlow</div>
             <div class="skill-box">PyTorch</div>
             <div class="skill-box">OpenCV</div>
-            <div class="skill-box">MONAI</div>
-            <div class="skill-box">Linux (Debian, Red Hat)</div>
-            <div class="skill-box">Python</div>
-            <div class="skill-box">C++</div>
-            <div class="skill-box">API Development</div>
-            <div class="skill-box">Git</div>
-            <div class="skill-box">ROS</div>
-            <div class="skill-box">DevNet, CyberOps, CCNA (Cisco)</div>
-            <div class="skill-box">Embedded Systems (Raspberry Pi)</div>
-            <div class="skill-box">Docker</div>
-            <div class="skill-box">Wireshark</div>
-            <div class="skill-box">Packet Tracer</div>
-        </div>
-        
-        <div class="section">
-            <h2>Honors & Awards</h2>
-            <ul>
-                <li>Integrated Project Design Competition: Bronze Award (03/2023 - 05/2023)</li>
-                <li>Vertically Integrated Project Performance: Silver Award (03/2022 - 06/2022)</li>
-            </ul>
         </div>
         
         <div class="section">
             <h2>Certificates</h2>
-            <ul>
-                <li><a href="https://coursera.org/verify/U787E2XSF7TW">Sequence Models</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/verify/A4UXFKW89MPT">Convolutional Neural Networks</a></li>
-                <li><a href="https://coursera.org/verify/PDLD3JZB96EZ">Improving Deep Neural Networks</a></li>
-                <li><a href="https://coursera.org/verify/6GB7NA65S985">Neural Networks and Deep Learning</a></li>
-                <li><a href="https://www.udemy.com/certificate/UC-aa00005c-163b-4c9b-a3e9-48534933141a/">Python for Machine Learning & Data Science</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/records/PZP9QXDXCWF4">Calculus for Machine Learning</a></li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Languages</h2>
-            <p>Uzbek (Native), Russian (Native), English (Fluent), Korean (Limited), Arabic (Elementary)</p>
+            <p><a href="https://coursera.org/verify/U787E2XSF7TW" class="links">Sequence Models</a></p>
         </div>
     </div>
 </body>
