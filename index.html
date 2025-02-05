@@ -5,53 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akbarali Vakhitov - Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-color: #f4f4f9;
             font-family: 'Poppins', sans-serif;
-            color: white;
-            text-align: center;
         }
         .container {
             max-width: 900px;
             margin: 50px auto;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            background: white;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #f8f9fa;
+        h1, h2, h3 {
+            color: #2c3e50;
         }
         .section {
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 15px;
-            border-radius: 10px;
+            margin-bottom: 30px;
         }
         .links a {
-            color: #ffd700;
+            color: #007bff;
             text-decoration: none;
-            font-weight: bold;
+            margin-right: 10px;
         }
         .links a:hover {
             text-decoration: underline;
         }
         .skill-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 12px;
-            border-radius: 10px;
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
             display: inline-block;
             margin: 5px;
-            font-weight: bold;
+            font-size: 14px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Akbarali Vakhitov</h1>
-        <p><a href="mailto:vahidovakbarali@gmail.com" class="links">vahidovakbarali@gmail.com</a></p>
-        <p><a href="https://linkedin.com/in/vakhitovakbarali" class="links">LinkedIn</a> | <a href="https://github.com/ImAli0" class="links">GitHub</a></p>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="text-center">Akbarali Vakhitov</h1>
+        <p class="text-center">Machine Learning & Computer Vision Researcher</p>
+        <p class="text-center links">
+            <a href="mailto:vahidovakbarali@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://linkedin.com/in/vakhitovakbarali"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/ImAli0"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate researcher in Machine Learning and Computer Vision, specializing in medical image analysis and deep learning. Currently, I am a research intern at CVHAI Lab at Hanyang University, working on advanced techniques for medical image segmentation.</p>
+        </div>
         
         <div class="section">
             <h2>Education</h2>
@@ -61,27 +75,35 @@
         
         <div class="section">
             <h2>Projects</h2>
-            <p><strong>Multi-Class Classification of Chest Diseases:</strong> A deep learning-based classification system for detecting COVID-19, Bacterial Pneumonia, and Normal cases using ResNet50. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main" class="links">GitHub</a></p>
+            <ul>
+                <li><strong>Multi-Class Classification of Chest Diseases:</strong> A deep learning-based classification system for detecting COVID-19, Bacterial Pneumonia, and Normal cases using ResNet50. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main">GitHub</a></li>
+                <li><strong>Object Detection Finetuning using Mask R-CNN:</strong> Trained on Penn-Fudan Database for pedestrian detection and instance segmentation. <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Object_Detection_Finetuning_using_Mask_R-CNN">GitHub</a></li>
+            </ul>
         </div>
         
         <div class="section">
             <h2>Research Experience & Internship</h2>
             <p><strong>Research Intern at CVHAI Lab, Hanyang University</strong> (10/2024 - Present)</p>
-            <p>Lab Website: <a href="https://sites.google.com/view/cvhai/members?authuser=0" class="links">CVHAI Lab</a></p>
+            <p>Midpoint Interpolation to Learn Compact and Separated Representations for Medical 3D UNet Segmentation of CT scans.</p>
+            <p><strong>Achievements/Tasks:</strong> Integrating Manifold mixup at latent space for better class representation.</p>
+            <p>Lab Website: <a href="https://sites.google.com/view/cvhai/members?authuser=0">CVHAI Lab</a></p>
         </div>
         
         <div class="section">
             <h2>Skills</h2>
-            <div class="skill-box">Machine Learning</div>
-            <div class="skill-box">Deep Learning</div>
-            <div class="skill-box">TensorFlow</div>
-            <div class="skill-box">PyTorch</div>
-            <div class="skill-box">OpenCV</div>
+            <span class="skill-box">Machine Learning</span>
+            <span class="skill-box">Deep Learning</span>
+            <span class="skill-box">TensorFlow</span>
+            <span class="skill-box">PyTorch</span>
+            <span class="skill-box">OpenCV</span>
         </div>
         
         <div class="section">
-            <h2>Certificates</h2>
-            <p><a href="https://coursera.org/verify/U787E2XSF7TW" class="links">Sequence Models</a></p>
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>Integrated Project Design Competition: Bronze Award (2023)</li>
+                <li>Vertically Integrated Project Performance: Silver Award (2022)</li>
+            </ul>
         </div>
     </div>
 </body>
