@@ -36,23 +36,33 @@
     .header {
       background: linear-gradient(45deg, #2c3e50, #34495e);
       color: #fff;
-      text-align: center;
+      /* Updated to flex layout */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 40px 20px;
     }
-    .header h1 {
+
+    .header-left {
+      /* This container holds name, subheading, contact info */
+      max-width: 70%;
+    }
+
+    .header-left h1 {
       font-size: 2.4rem;
       margin-bottom: 10px;
       font-weight: 700;
     }
+
     .subheading {
       font-size: 1rem;
       color: #dbe0e4; /* Lighter text */
       margin-bottom: 20px;
     }
+
     .contact-info {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 15px;
       font-size: 0.95rem;
     }
@@ -64,19 +74,24 @@
       text-decoration: underline;
     }
 
-    /* PROFILE PIC */
+    /* PHOTO ON THE RIGHT */
+    .header-right {
+      /* Just a container for the image */
+      display: flex;
+      align-items: center;
+    }
+
     .profile-pic {
-      width: 300px;       /* Enlarged width */
-      height: 300px;      /* Enlarged height */
-      margin: 0 auto 15px auto; /* center & add bottom spacing */
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid #fff; /* White ring around photo */
+      border: 3px solid #fff; /* white ring around photo */
     }
     .profile-pic img {
       width: 100%;
       height: 100%;
-      object-fit: cover;  /* Crop/cover the circle */
+      object-fit: cover;
       display: block;
     }
 
@@ -150,6 +165,17 @@
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center; /* Re-center on small screens */
+      }
+      .header-left {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .header-right {
+        justify-content: center;
+      }
       .row {
         flex-direction: column;
       }
@@ -163,23 +189,26 @@
   <div class="resume-container">
     <!-- HEADER -->
     <div class="header">
-      <!-- PROFILE PICTURE -->
-      <div class="profile-pic">
-        <!-- Replace "profile.jpg" with your actual image file name or a direct URL -->
-        <img src="photo.jpg" alt="Akbarali Vakhitov">
+      <div class="header-left">
+        <h1>AKBARALI VAKHITOV</h1>
+        <div class="subheading">
+          Integrated System Engineering Graduate (Honors) • Inha University
+        </div>
+        <div class="contact-info">
+          <div>Email: <a href="mailto:vahidovakbarali@gmail.com">vahidovakbarali@gmail.com</a></div>
+          <div>Phone: +82&nbsp;10&nbsp;2599&nbsp;0523</div>
+          <div>Location: Incheon, South Korea</div>
+          <div>Skype: live:cid.197aa1afb7d46706</div>
+          <div>LinkedIn: <a href="https://www.linkedin.com/in/vakhitovakbarali" target="_blank">linkedin.com/in/vakhitovakbarali</a></div>
+          <div>GitHub: <a href="https://github.com/ImAli0" target="_blank">github.com/ImAli0</a></div>
+        </div>
       </div>
 
-      <h1>AKBARALI VAKHITOV</h1>
-      <div class="subheading">
-        Integrated System Engineering Graduate (Honors) • Inha University
-      </div>
-      <div class="contact-info">
-        <div>Email: <a href="mailto:vahidovakbarali@gmail.com">vahidovakbarali@gmail.com</a></div>
-        <div>Phone: +82&nbsp;10&nbsp;2599&nbsp;0523</div>
-        <div>Location: Incheon, South Korea</div>
-        <div>Skype: live:cid.197aa1afb7d46706</div>
-        <div>LinkedIn: <a href="https://www.linkedin.com/in/vakhitovakbarali" target="_blank">linkedin.com/in/vakhitovakbarali</a></div>
-        <div>GitHub: <a href="https://github.com/ImAli0" target="_blank">github.com/ImAli0</a></div>
+      <div class="header-right">
+        <div class="profile-pic">
+          <!-- Replace "profile.jpg" with your actual image file name or a direct URL -->
+          <img src="profile.jpg" alt="Akbarali Vakhitov">
+        </div>
       </div>
     </div>
 
