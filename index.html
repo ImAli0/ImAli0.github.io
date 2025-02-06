@@ -66,8 +66,8 @@
 
     /* PROFILE PIC */
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 300px;       /* Enlarged width */
+      height: 300px;      /* Enlarged height */
       margin: 0 auto 15px auto; /* center & add bottom spacing */
       border-radius: 50%;
       overflow: hidden;
@@ -165,8 +165,8 @@
     <div class="header">
       <!-- PROFILE PICTURE -->
       <div class="profile-pic">
-        <!-- Replace "profile.jpg" with your actual image file name or URL -->
-        <img src="my_photo.jpg" alt="Akbarali Vakhitov">
+        <!-- Replace "profile.jpg" with your actual image file name or a direct URL -->
+        <img src="photo.jpg" alt="Akbarali Vakhitov">
       </div>
 
       <h1>AKBARALI VAKHITOV</h1>
@@ -193,12 +193,12 @@
             <h2>About Me</h2>
             <p>
               I am an engineering graduate of Inha University, Incheon, South Korea.  
-              I have acquired ML (Supervised Learning/Unsupervised Learning), Deep Learning (NN, CNN, RNN, Transformers, LSTM, Attention...), 
-              C++, Python, Linux, Application Deployment skills, and more. Currently, as a research intern at 
-              <a href="https://sites.google.com/view/cvhai/members?authuser=0" target="_blank">
-                CVHAI Lab
-              </a> (Hanyang University), I focus on manifold mixup and latent space interpolation techniques to enhance 3D UNet performance for CT scans. 
-              I strive to bridge theoretical advancements with real-world applications, confident that AI can drive impactful innovations in healthcare and beyond.
+              I have acquired ML(Supervised Learning/Unsupervised Learning), Deep Learning(NN, CNN, RNN, Transformers, LSTM, Attention...) C++, Python, Linux, 
+              Application Deployment skills, and more. Currently, as a research intern at <a href="https://sites.google.com/view/cvhai/members?authuser=0" target="_blank">
+                  CVHAI Lab
+                </a> (Hanyang University), 
+              I focus on manifold mixup and latent space interpolation techniques to enhance 3D UNet performance for CT scans. 
+              I strive to bridge theoretical advancements with real-world applications, confident that AI can drive impactful innovations in healthcare and beyond
             </p>
           </div>
 
@@ -220,8 +220,11 @@
             <h3 class="project-title">1. Multi-Class Classification of Chest Diseases</h3>
             <ul>
               <li>This project is a multi-class classiﬁcation system for chest diseases,
-speciﬁcally targeting: COVID-19 Viral Pneumonia, Bacterial Pneumonia, and Normal (No disease).  
-Due to limited data, I leveraged transfer learning with ResNet50 (pre-trained on ImageNet).</li>
+speciﬁcally targeting the following classes: COVID-19 Viral
+Pneumonia, Bacterial Pneumonia, and Normal (No disease). Due to the
+scarcity of the dataset, this project leveraged the beneﬁts of transfer
+learning. I utilized ResNet50, a pre-trained network on the ImageNet
+dataset, as the base model.</li>
               <li>Repo: 
                 <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Chest%20Disease%20Classification%20by%20Transfer%20Learning" target="_blank">
                   Multi-Class Chest Diseases
@@ -231,8 +234,12 @@ Due to limited data, I leveraged transfer learning with ResNet50 (pre-trained on
 
             <h3 class="project-title">2. Object Detection Finetuning using Mask R-CNN</h3>
             <ul>
-              <li>Fine-tuned a pre-trained Mask R-CNN on the Penn-Fudan Database (170 images, 345 pedestrian instances).  
-Demonstrates the usage of TorchVision's new features for training object detection and instance segmentation on a custom dataset.</li>
+              <li>This project is about ﬁnetuning a pre-trained Mask R-CNN model on
+the Penn-Fudan Database for Pedestrian Detection and Segmentation.
+It contains 170 images with 345 instances of pedestrians, and it is used
+to illustrate how to use the new features in torchvision in order to
+train an object detection and instance segmentation model on a
+custom dataset.</li>
               <li>Repo: 
                 <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/Object_Detection_Finetuning_using_Mask_R-CNN" target="_blank">
                   Mask R-CNN Finetuning
@@ -242,8 +249,10 @@ Demonstrates the usage of TorchVision's new features for training object detecti
 
             <h3 class="project-title">3. Spam Detection with LSTM</h3>
             <ul>
-              <li>Implemented a spam detection model using an LSTM (Long Short-Term Memory) network.  
-Trained on an SMS dataset to classify messages as spam or ham (non-spam).</li>
+              <li>This project demonstrates the implementation of a spam detection
+model using an LSTM (Long Short-Term Memory) network. The model
+is trained on a dataset of SMS messages to classify them as either
+spam or ham (non-spam).</li>
               <li>Repo: 
                 <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/LSTM%20based%20SPAM%20Detector" target="_blank">
                   LSTM Spam Detector
@@ -253,8 +262,18 @@ Trained on an SMS dataset to classify messages as spam or ham (non-spam).</li>
 
             <h3 class="project-title">4. Neural Network from Scratch in TensorFlow</h3>
             <ul>
-              <li>Demonstrates building a Neural Network from scratch in TensorFlow without Keras—manually handling forward propagation, 
-loss computation, parameter updates, and training loops.</li>
+              <li>This project implements a simple neural network from scratch using
+TensorFlow. It includes the full process from initializing the network,
+performing forward propagation, computing loss, updating
+parameters, and training the model. The implementation demonstrates
+the core principles of neural networks and provides a foundation for
+further exploration and customization. The goal of this project is to
+implement a Neural Network model in TensorFlow using its core
+functionality (i.e., without the help of a high-level API like Keras).
+While it’s easier to get started with TensorFlow with the Keras API, it’s
+still worth understanding how a slightly lower-level implementation
+might work in TensorFlow</li>
+              <li>Demonstrates manual forward propagation, parameter updates, training loop in raw TensorFlow.</li>
               <li>Repo: 
                 <a href="https://github.com/ImAli0/DeepLearning_projects/tree/main/NN_from_scratch" target="_blank">
                   NN from Scratch
@@ -281,7 +300,7 @@ loss computation, parameter updates, and training loops.</li>
               </li>
               <li>Achievements/Tasks:
                 <ul>
-                  <li>Integrating manifold mixup at the latent space for better class representation.</li>
+                  <li>Integrating manifold mixup at latent space for better class representation.</li>
                   <li>Exploring 3D UNet architectures for improved CT scan segmentation.</li>
                 </ul>
               </li>
